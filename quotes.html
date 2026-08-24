@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes to Think About | Cameron Fryer Wealth Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Navigation Tabs -->
+    <header>
+        <div class="logo">Cameron Fryer <span>Wealth Planner</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            
+            <!-- Services Dropdown Tab -->
+            <div class="dropdown">
+                <button class="dropbtn">Services ▾</button>
+                <div class="dropdown-content">
+                    <a href="grow-money.html">Grow Money</a>
+                    <a href="protect-assets.html">Protect Assets</a>
+                    <a href="plan-retirement.html">Plan Retirement</a>
+                    <a href="manage-taxes.html">Manage Taxes</a>
+                    <a href="estate-planning.html">Estate Planning</a>
+                </div>
+            </div>
+
+            <a href="quotes.html" class="active-tab">Quotes to Think About</a>
+            <a href="contact.html">Contact Us or Book an Appointment</a>
+            <a href="contact.html" class="btn-nav">Get in Touch</a>
+        </nav>
+    </header>
+
+    <!-- Quotes Page Content -->
+    <section class="page-content">
+        <h1>Quotes to Think About</h1>
+        <p class="subtitle">A visual collection of financial wisdom, strategy notes, and daily insights. Click any image to enlarge.</p>
+        
+        <!-- Photo Grid for Quotes -->
+        <div class="quotes-grid">
+            <div class="quote-card" onclick="openLightbox('images/quote1.jpg')">
+                <img src="images/quote1.jpg" alt="Quote 1" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+1';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote2.jpg')">
+                <img src="images/quote2.jpg" alt="Quote 2" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+2';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote3.jpg')">
+                <img src="images/quote3.jpg" alt="Quote 3" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+3';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote4.jpg')">
+                <img src="images/quote4.jpg" alt="Quote 4" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+4';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote5.jpg')">
+                <img src="images/quote5.jpg" alt="Quote 5" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+5';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote6.jpg')">
+                <img src="images/quote6.jpg" alt="Quote 6" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+6';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote7.jpg')">
+                <img src="images/quote7.jpg" alt="Quote 7" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+7';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote8.jpg')">
+                <img src="images/quote8.jpg" alt="Quote 8" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+8';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote9.jpg')">
+                <img src="images/quote9.jpg" alt="Quote 9" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+9';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote10.jpg')">
+                <img src="images/quote10.jpg" alt="Quote 10" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+10';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote11.jpg')">
+                <img src="images/quote11.jpg" alt="Quote 11" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+11';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote12.jpg')">
+                <img src="images/quote12.jpg" alt="Quote 12" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+12';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote13.jpg')">
+                <img src="images/quote13.jpg" alt="Quote 13" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+13';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote14.jpg')">
+                <img src="images/quote14.jpg" alt="Quote 14" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+14';">
+            </div>
+            <div class="quote-card" onclick="openLightbox('images/quote15.jpg')">
+                <img src="images/quote15.jpg" alt="Quote 15" onerror="this.src='https://via.placeholder.com/400x400/111827/d4af37?text=Quote+15';">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal for Enlarge View -->
+    <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged Quote">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Your next chapter starts with one intentional decision.</h2>
+        <a href="contact.html" class="btn-primary" style="margin-top: 20px; display: inline-block;">Schedule a Consultation</a>
+    </footer>
+
+    <!-- Lightbox Script -->
+    <script>
+        function openLightbox(imageSrc) {
+            const modal = document.getElementById('lightbox');
+            const modalImg = document.getElementById('lightbox-img');
+            modal.style.display = "flex";
+            modalImg.src = imageSrc;
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = "none";
+        }
+    </script>
+</body>
+</html>
